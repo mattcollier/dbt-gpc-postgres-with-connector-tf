@@ -17,3 +17,12 @@ variable "dbt_cloud_cidrs" {
     "34.233.79.135/32"
   ] # North-America (us-east-1) cell  [oai_citation:3‡dbt Developer Hub](https://docs.getdbt.com/docs/cloud/about-cloud/access-regions-ip-addresses)
 }
+
+variable "dbt_account_id" {
+  type = string
+}
+
+variable "dbt_token" {
+  type      = string
+  sensitive = true
+}

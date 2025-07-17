@@ -71,3 +71,14 @@ resource "google_compute_instance" "pg" {
 
   depends_on = [google_project_service.compute_engine]
 }
+
+module "dbt_module" {
+  source = "./dbt_module"
+
+  db_user        = var.db_user
+  db_name        = var.db_name
+  db_password    = var.db_password
+  dbt_account_id = var.dbt_account_id
+  dbt_token      = var.dbt_token
+  hostname       = google_compute_instance.pg.network_interface[0].access_config[0].nat_ip
+}

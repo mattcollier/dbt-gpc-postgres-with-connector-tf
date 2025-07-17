@@ -20,6 +20,10 @@ variable "dbt_account_id" {
   type = number
 }
 
+variable "dbt_host_url" {
+  type = string
+}
+
 variable "dbt_token" {
   type      = string
   sensitive = true

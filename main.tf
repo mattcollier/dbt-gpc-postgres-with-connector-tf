@@ -79,6 +79,7 @@ module "dbt_module" {
   db_name        = var.db_name
   db_password    = var.db_password
   dbt_account_id = var.dbt_account_id
+  dbt_host_url   = var.dbt_host_url
   dbt_token      = var.dbt_token
   hostname       = google_compute_instance.pg.network_interface[0].access_config[0].nat_ip
 }

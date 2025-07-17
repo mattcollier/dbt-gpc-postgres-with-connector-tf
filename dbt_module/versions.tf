@@ -12,5 +12,5 @@ provider "dbtcloud" {
   account_id = var.dbt_account_id
   token      = var.dbt_token
   // optional - defaults to the US Multi Tenant URL "https://cloud.getdbt.com/api"
-  # host_url   = "..."
+  host_url   = var.dbt_host_url
 }

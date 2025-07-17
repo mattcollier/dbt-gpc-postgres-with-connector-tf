@@ -17,7 +17,7 @@ variable "hostname" {
 }
 
 variable "dbt_account_id" {
-  type = string
+  type = number
 }
 
 variable "dbt_token" {

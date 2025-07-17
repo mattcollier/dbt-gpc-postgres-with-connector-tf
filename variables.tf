@@ -19,7 +19,7 @@ variable "dbt_cloud_cidrs" {
 }
 
 variable "dbt_account_id" {
-  type = string
+  type = number
 }
 
 variable "dbt_token" {
